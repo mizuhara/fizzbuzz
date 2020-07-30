@@ -1,0 +1,19 @@
+#%RAML 1.0
+---
+title: FizzBuzz
+version: 1.0
+
+documentation:
+  - title: FizzBuzz API
+
+/fizzbuzz:
+  uriParameters:
+    none:
+      required: false
+      type: no uri parameter is required.
+  get:
+    queryParameters:
+      value:
+        description: 1 以上の数値
+        type: int
+        required: true
